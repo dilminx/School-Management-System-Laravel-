@@ -1,19 +1,20 @@
 @extends('layout')
 @section('content')
+ 
+ 
 <div class="card">
-    <div class="card-header">Teachers Page</div>
-    <div class="card-body">
-        <!-- Loop through each teacher -->
-        @foreach($teachers as $teacher)
+  <div class="card-header bg-primary text-white">Teachers Page</div>
+  <div class="card-body bg-light">
+   
+ 
         <div class="card-body">
-            <h5 class="card-title">Name: {{ $teacher->name }}</h5>
-            <p class="card-text">Subjects: {{ $teacher->subject }}</p>
-            <p class="card-text">Mobile: {{ $teacher->mobile }}</p>
-            <a class="btn btn-danger" href="{{ route('teachers.edit', $teacher->id) }}">Edit</a>
-        </div>
-        <hr>
-        @endforeach
-        <button class="btn btn-warning" onclick="window.history.back()">Back</button>
-    </div>
+        <h3 class="card-title">Name : {{ $teachers->name }}</h3>
+        <p class="card-text">Subject : {{ $teachers->subject }}</p>
+        <p class="card-text">Mobile : {{ $teachers->mobile }}</p>
+  </div>
+  <button class="btn btn-warning" onclick="window.history.back()">Back</button>  
+    </hr>
+  
+  </div>
 </div>
 @endsection
