@@ -84,7 +84,7 @@ div.content {
         <div class="col-md-3">
             <div class="sidebar">
   <a class="active" href="students">Student</a>
-  <a href="students">Student</a>
+  <!-- <a href="students">Student</a> -->
   <a href="teacher">Teacher</a>
   <a href="course">Courses</a>
   <a href="Payment">Payment</a>
